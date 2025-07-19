@@ -4,7 +4,7 @@
 )](https://discord.gg/ENB7RbxVZE)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&logo=5865F2&logoColor=black&labelColor=black&color=%23f3f3f3)](https://github.com/CrystalSystems/crystal-v1.0/blob/main/LICENSE)
 
-## Crystal v1.0 (Production) – deployed in a production environment as of 19.07.2025
+## Crystal v1.0 (Production) – deployed in production as of 19.07.2025
 
 This version is functionally identical to the regular [CRYSTAL v1.0](https://github.com/CrystalSystems/crystal-v1.0). However, it includes several key enhancements aimed at improving reliability, security, and stability:
 
