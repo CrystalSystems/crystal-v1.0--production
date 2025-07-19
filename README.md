@@ -25,7 +25,6 @@ This function captures the context in which the error occurred (even if not expl
 
 - In **production**, it returns a generic 500 error message without exposing sensitive details.
 - In **development**, it returns the full error object including stack trace and calling context - making it easier to trace and fix issues.
-
 This approach enhances security in production while maintaining maximum visibility and clarity during development.
 
 
