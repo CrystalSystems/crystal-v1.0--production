@@ -9,11 +9,11 @@ This version CRYSTAL v1.0 is deployed in a production environment as of 07/19/20
 ### Secure database connection
 The backend connects to MongoDB using authentication parameters (`USER`, `PASSWORD`, `authSource`), ensuring protection against unauthorized access and aligning with production best practices.
 
-### Automatic retry logic
+### Automatic MongoDB connection retry logic
 Implemented automatic retry logic for MongoDB connection failures, with customizable retry count (`MAX_RETRIES`) and delay (`RETRY_DELAY`) between attempts. This increases application resilience during temporary database outages.
 
 ### Extended `.env` configuration
-This version introduces a more flexible and detailed `.env` structure, allowing precise configuration across different environments (development, staging, production).
+This version introduces a more flexible and detailed `.env` structure, allowing precise configuration across different environments (development, production).
 
 ### Enhanced connection logging
 Improved database connection logging with visual cues and detailed status messages — making debugging and monitoring easier in production environments.
