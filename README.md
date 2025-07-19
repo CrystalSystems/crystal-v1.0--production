@@ -22,7 +22,8 @@ Improved database connection logging with visual cues and detailed status messag
 A custom `handleServerError` [utility](https://github.com/CrystalSystems/crystal-v1.0--prod/blob/main/backend/src/shared/helpers/handle-server-error/handle-server-error.js) was introduced to standardize backend error responses and improve debugging during development.  
 This function captures the context in which the error occurred (even if not explicitly provided), logs detailed information to the console, and adjusts the HTTP response based on the environment:  
 - In **production**, it returns a generic 500 error message without exposing sensitive details.  
-- In **development**, it returns the full error object including stack trace and calling context - making it easier to trace and fix issues.  
+- In **development**, it returns the full error object including stack trace and calling context - making it easier to trace and fix issues.
+  
 This approach enhances security in production while maintaining maximum visibility and clarity during development.
 
 
