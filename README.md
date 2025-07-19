@@ -7,7 +7,7 @@
 This version is deployed in a production environment as of 07/19/2025 and is functionally identical to the regular [CRYSTAL v1.0](https://github.com/CrystalSystems/crystal-v1.0). However, it includes several key enhancements aimed at improving reliability, security, and stability:
 
 ### Secure database connection
-The backend [connects](https://github.com/CrystalSystems/crystal-v1.0--prod/blob/544bfffa9c1b06b081d2be622a9190030ca0444d/backend/src/core/engine/db/connectDB.js#L22) to MongoDB using authentication parameters (`USER`, `PASSWORD`, `authSource`), ensuring protection against unauthorized access and aligning with production best practices.
+In the production environment, the backend [connects](https://github.com/CrystalSystems/crystal-v1.0--prod/blob/544bfffa9c1b06b081d2be622a9190030ca0444d/backend/src/core/engine/db/connectDB.js#L22) to MongoDB using authentication parameters (USER, PASSWORD, authSource), ensuring protection against unauthorized access.
 
 ### Automatic MongoDB connection retry logic
 Implemented automatic retry [logic](https://github.com/CrystalSystems/crystal-v1.0--prod/blob/544bfffa9c1b06b081d2be622a9190030ca0444d/backend/src/core/engine/db/connectDB.js#L13) for MongoDB connection failures, with customizable retry count (`MAX_RETRIES`) and delay (`RETRY_DELAY`) between attempts. This increases application resilience during temporary database outages.
