@@ -24,9 +24,6 @@ This function captures the context in which the error occurred (even if not expl
 - In **production**, it returns a generic 500 error message without exposing sensitive details.  
 - In **development**, it returns the full error object including stack trace and calling context - making it easier to trace and fix issues.
 
-This approach enhances security in production while maintaining maximum visibility and clarity during development.
-
-
 **⚠️ Before using [CRYSTAL v1.0 (prod)](https://github.com/CrystalSystems/crystal-v1.0--prod) or its code in a production environment, it is strongly recommended to carefully review the implementation and assess any potential cybersecurity risks.**<br/>
 
 [CRYSTAL](https://crysty.ru/) | [shedov.top](https://shedov.top/) | [Discord](https://discord.gg/ENB7RbxVZE) | [Telegram](https://t.me/ShedovChannel) | [X](https://x.com/AndrewShedov) | [VK](https://vk.com/shedovclub) | [VK Video](https://vkvideo.ru/@shedovclub) | [YouTube](https://www.youtube.com/@AndrewShedov)
