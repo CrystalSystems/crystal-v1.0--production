@@ -12,8 +12,8 @@ The backend connects to MongoDB using authentication parameters (`USER`, `PASSWO
 ### Automatic MongoDB connection retry logic
 Implemented automatic retry logic for MongoDB connection failures, with customizable retry count (`MAX_RETRIES`) and delay (`RETRY_DELAY`) between attempts. This increases application resilience during temporary database outages.
 
-### Extended `.env` configuration
-This version introduces a more flexible and detailed `.env` structure, allowing precise configuration across different environments (development, production).
+### Extended `.env` configuration  
+This version introduces a more flexible and detailed `.env` structure, allowing precise configuration across different environments such as development and production.
 
 ### Enhanced connection logging
 Improved database connection logging with visual cues and detailed status messages — making debugging and monitoring easier in production environments.
