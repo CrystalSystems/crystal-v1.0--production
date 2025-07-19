@@ -4,7 +4,9 @@
 )](https://discord.gg/ENB7RbxVZE)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&logo=5865F2&logoColor=black&labelColor=black&color=%23f3f3f3)](https://github.com/CrystalSystems/crystal-v1.0/blob/main/LICENSE)
 
-This version is deployed in a production environment as of 19.07.2025 and is functionally identical to the regular [CRYSTAL v1.0](https://github.com/CrystalSystems/crystal-v1.0). However, it includes several key enhancements aimed at improving reliability, security, and stability:
+## Crystal v1.0 (Production) – current as of 19.07.2025
+
+This version is deployed in a production environment and is functionally identical to the regular [CRYSTAL v1.0](https://github.com/CrystalSystems/crystal-v1.0). However, it includes several key enhancements aimed at improving reliability, security, and stability:
 
 ### Secure database connection
 In the production environment, the backend [connects](https://github.com/CrystalSystems/crystal-v1.0--prod/blob/544bfffa9c1b06b081d2be622a9190030ca0444d/backend/src/core/engine/db/connectDB.js#L22) to MongoDB using authentication parameters (`USER`, `PASSWORD`, `authSource`), ensuring protection against unauthorized access.
