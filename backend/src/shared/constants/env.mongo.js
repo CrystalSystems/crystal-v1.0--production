@@ -1,4 +1,4 @@
-export const URI_BASE = process.env.MONGO_URI_BASE;
+export const BASE_URI = process.env.MONGO_BASE_URI;
 export const HOST = process.env.MONGO_HOST;
 export const PORT = process.env.MONGO_PORT;
 export const DB_NAME = process.env.MONGO_DB_NAME;

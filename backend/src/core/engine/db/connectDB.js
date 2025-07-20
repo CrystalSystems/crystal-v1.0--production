@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import {
-    URI_BASE,
+    BASE_URI,
     HOST,
     PORT,
     DB_NAME,
@@ -20,11 +20,11 @@ export async function connectDB(retries = MAX_RETRIES) {
 
     const mongoUri = PRODUCTION_STATUS
         ? `mongodb://${USER}:${PASSWORD}@${HOST}:${PORT}/${DB_NAME}?authSource=${AUTH_SOURCE}`
-        : `${URI_BASE}/${DB_NAME}`;
+        : `${BASE_URI}/${DB_NAME}`;
 
     const mongoLogUri = PRODUCTION_STATUS
         ? `${HOST}:${PORT}/${DB_NAME}`
-        : `${URI_BASE}/${DB_NAME}`;
+        : `${BASE_URI}/${DB_NAME}`;
 
     console.log(`  🔌 Connecting to MongoDB at: ${mongoLogUri}...`);
 
