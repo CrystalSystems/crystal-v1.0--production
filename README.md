@@ -21,7 +21,7 @@ This version introduces a more flexible and detailed `.env` [structure](https://
 Improved database connection [logging](https://github.com/CrystalSystems/crystal-v1.0--production/blob/6b1bdc59fffe20d38d56a00459926a72fe5326bb/backend/src/core/engine/db/connectDB.js#L29) with visual cues and detailed status messages - making debugging and monitoring easier in production environments.
 
 ### Improved error handling  
-A custom `handleServerError` [utility](https://github.com/CrystalSystems/crystal-v1.0--production/blob/main/backend/src/shared/helpers/handle-server-error/handle-server-error.js) was introduced to standardize backend error responses and improve debugging during development.  
+A custom `handleServerError` [helper](https://github.com/CrystalSystems/crystal-v1.0--production/blob/main/backend/src/shared/helpers/handle-server-error/handle-server-error.js) was introduced to standardize backend error responses and improve debugging during development.  
 This function captures the context in which the error occurred (even if not explicitly provided), logs detailed information to the console, and adjusts the HTTP response based on the environment:  
 - In **production**, it returns a generic 500 error message without exposing sensitive details.  
 - In **development**, it returns the full error object including stack trace and calling context - making it easier to trace and fix issues.
