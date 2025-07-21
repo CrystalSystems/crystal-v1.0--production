@@ -15,7 +15,7 @@ In the production environment, the backend [connects](https://github.com/Crystal
 Implemented an automatic reconnection [mechanism](https://github.com/CrystalSystems/crystal-v1.0--production/blob/4700679e84b8683fd5414d1700df99f7a145879e/backend/src/core/engine/db/connectDB.js#L14) for MongoDB in case of connection failures. It supports customizable retry count (`maxRetries`) and delay (`retryDelay`) between attempts, improving application resilience during temporary database outages.
 
 #### 3. Extended `.env` configuration. 
-This version introduces a more flexible and detailed `.env` [structure](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/backend/src/shared/constants), allowing precise configuration across different environments such as development and production.
+This version introduces a more flexible and detailed `.env` [structure](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/backend/src/shared/constants), allowing for fine-grained customization in development and production environments.
 
 #### 4. Advanced MongoDB connection logging.
 Improved database connection [logging](https://github.com/CrystalSystems/crystal-v1.0--production/blob/6b1bdc59fffe20d38d56a00459926a72fe5326bb/backend/src/core/engine/db/connectDB.js#L29) with visual cues and detailed status messages - making debugging and monitoring easier in production environments.
