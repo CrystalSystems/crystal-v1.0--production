@@ -10,12 +10,12 @@ import {
     PRODUCTION_STATUS
 } from "../../../shared/constants/index.js";
 
-const MAX_RETRIES = 5;
-const RETRY_DELAY = 2000; // ms
+const maxRetries = 5;
+const retryDelay = 2000; // ms
 
 const orangeBox = (text) => `\x1b[48;5;202m\x1b[38;2;255;255;255m${text}\x1b[0m`;
 
-export async function connectDB(retries = MAX_RETRIES) {
+export async function connectDB(retries = maxRetries) {
     mongoose.set("strictQuery", true);
 
     const mongoUri = PRODUCTION_STATUS
@@ -35,11 +35,11 @@ export async function connectDB(retries = MAX_RETRIES) {
   Connected: ${mongoLogUri}`
         );
     } catch (error) {
-        console.error(`  ❌ DB connection failed (${MAX_RETRIES - retries + 1}/${MAX_RETRIES}) -`, error.message);
+        console.error(`  ❌ DB connection failed (${maxRetries - retries + 1}/${maxRetries}) -`, error.message);
 
         if (retries > 0) {
-            console.log(`  🔁 Retrying in ${RETRY_DELAY / 1000}s...\n`);
-            setTimeout(() => connectDB(retries - 1), RETRY_DELAY);
+            console.log(`  🔁 Retrying in ${retryDelay / 1000}s...\n`);
+            setTimeout(() => connectDB(retries - 1), retryDelay);
         } else {
             console.error("  ❌ All retry attempts failed. Exiting.\n");
             process.exit(1);
