@@ -9,10 +9,10 @@
 #### This version is functionally identical to the regular [CRYSTAL v1.0](https://github.com/CrystalSystems/crystal-v1.0). However, it includes several key enhancements aimed at improving reliability, security, and stability:
 
 #### 1. Secure database connection.
-In the production environment, the backend [connects](https://github.com/CrystalSystems/crystal-v1.0--production/blob/544bfffa9c1b06b081d2be622a9190030ca0444d/backend/src/core/engine/db/connectDB.js#L22) to MongoDB using authentication parameters (`USER`, `PASSWORD`, `authSource`), ensuring protection against unauthorized access.
+In the production environment, the backend [connects](https://github.com/CrystalSystems/crystal-v1.0--production/blob/544bfffa9c1b06b081d2be622a9190030ca0444d/backend/src/core/engine/db/connectDB.js#L22) to MongoDB using authentication parameters (`user`, `password`, `authSource`), ensuring protection against unauthorized access.
 
 #### 2. Automatic MongoDB connection retry logic.
-Implemented automatic retry [logic](https://github.com/CrystalSystems/crystal-v1.0--production/blob/544bfffa9c1b06b081d2be622a9190030ca0444d/backend/src/core/engine/db/connectDB.js#L13) for MongoDB connection failures, with customizable retry count (`MAX_RETRIES`) and delay (`RETRY_DELAY`) between attempts. This increases application resilience during temporary database outages.
+Implemented automatic retry [logic](https://github.com/CrystalSystems/crystal-v1.0--production/blob/544bfffa9c1b06b081d2be622a9190030ca0444d/backend/src/core/engine/db/connectDB.js#L13) for MongoDB connection failures, with customizable retry count (`maxRetries`) and delay (`retryDelay`) between attempts. This increases application resilience during temporary database outages.
 
 #### 3. Extended `.env` configuration. 
 This version introduces a more flexible and detailed `.env` [structure](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/backend/src/shared/constants), allowing precise configuration across different environments such as development and production.
