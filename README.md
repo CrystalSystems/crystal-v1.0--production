@@ -18,7 +18,8 @@ Implemented an automatic reconnection [mechanism](https://github.com/CrystalSyst
 This version introduces a more flexible and detailed `.env` [structure](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/backend/src/shared/constants), allowing for fine-grained customization in development and production environments.
 
 #### 4. Advanced MongoDB connection logging.
-Improved database connection [logging](https://github.com/CrystalSystems/crystal-v1.0--production/blob/6b1bdc59fffe20d38d56a00459926a72fe5326bb/backend/src/core/engine/db/connectDB.js#L29) with visual cues and detailed status messages - making debugging and monitoring easier in production environments.
+
+Improved database connection [logging](https://github.com/CrystalSystems/crystal-v1.0--production/blob/6b1bdc59fffe20d38d56a00459926a72fe5326bb/backend/src/core/engine/db/connectDB.js#L29) with detailed status messages - this simplifies debugging and monitoring in production and development environments.
 
 #### 5. Improved error handling.  
 A custom `handleServerError` [helper](https://github.com/CrystalSystems/crystal-v1.0--production/blob/main/backend/src/shared/helpers/handle-server-error/handle-server-error.js) was introduced to standardize backend error responses and improve debugging during development.  
