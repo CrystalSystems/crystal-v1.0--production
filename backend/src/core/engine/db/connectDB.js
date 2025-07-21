@@ -10,8 +10,10 @@ import {
     PRODUCTION_STATUS
 } from "../../../shared/constants/index.js";
 
+// automatic reconnection to MongoDB
 const maxRetries = 5;
 const retryDelay = 2000; // ms
+// /automatic reconnection to MongoDB
 
 const orangeBox = (text) => `\x1b[48;5;202m\x1b[38;2;255;255;255m${text}\x1b[0m`;
 
