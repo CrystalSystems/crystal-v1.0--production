@@ -28,7 +28,7 @@ This function captures the context in which the error occurred (even if not expl
 
 **⚠️ Before using [CRYSTAL v1.0 (Production)](https://github.com/CrystalSystems/crystal-v1.0--production) or its code in a production environment, it is strongly recommended to carefully review the implementation and assess any potential cybersecurity risks.**<br/>
 
-[CRYSTAL](https://crysty.ru/) | [shedov.top](https://shedov.top/) | [Discord](https://discord.gg/ENB7RbxVZE) | [Telegram](https://t.me/ShedovChannel) | [X](https://x.com/AndrewShedov) | [VK](https://vk.com/shedovclub) | [VK Video](https://vkvideo.ru/@shedovclub) | [YouTube](https://www.youtube.com/@AndrewShedov)
+[SHEDOV.TOP](https://shedov.top/) | [CRYSTAL](https://crysty.ru/AndrewShedov) | [Discord](https://discord.gg/ENB7RbxVZE) | [Telegram](https://t.me/ShedovChannel) | [X](https://x.com/AndrewShedov) | [VK](https://vk.com/shedovclub) | [VK Video](https://vkvideo.ru/@shedovclub) | [YouTube](https://www.youtube.com/@AndrewShedov)
 
 <h3 align="center">CRYSTAL is tested on</h3>
 
