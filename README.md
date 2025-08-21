@@ -1,4 +1,4 @@
-[<img src="https://shedov.top/ru/wp-content/images/logo_crystal-v1.0_github_25.png">](https://shedov.top/description-and-capabilities-of-crystal-v1-0/)
+[<img src="https://raw.githubusercontent.com/CrystalSystems/crystal-v1.0--production/refs/heads/main/assets/crystal-v1.0_logo.png">](https://shedov.top/description-and-capabilities-of-crystal-v1-0/)
 
 [![Discord](https://img.shields.io/discord/1006372235172384849?style=for-the-badge&logo=5865F2&logoColor=black&labelColor=black&color=%23f3f3f3
 )](https://discord.gg/ENB7RbxVZE)
@@ -34,6 +34,6 @@ This function captures the context in which the error occurred (even if not expl
 
 <p align="center">
   <a href="https://www.browserstack.com/">
-    <img src="https://shedov.top/wp-content/images/browserstack-logo-global.svg" width="290" />
+    <img src="https://raw.githubusercontent.com/CrystalSystems/crystal-v1.0--production/eae791ae0fc1fd4ebcdac588ca8a03a06f13abe3/assets/browserstack_logo.svg" width="290" />
   </a>
 </p>
