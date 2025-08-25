@@ -1,11 +1,11 @@
 {
-  "name": "crystal-backend--prod",
+  "name": "crystal-backend--production",
   "version": "1.0.0",
   "author": {
     "name": "Andrew Shedov",
     "url": "https://shedov.top"
   },
-  "homepage": "https://github.com/CrystalSystems/crystal-v1.0--prod",
+  "homepage": "https://github.com/CrystalSystems/crystal-v1.0--production",
   "license": "MIT",
   "type": "module",
   "main": "./src/core/main.js",
