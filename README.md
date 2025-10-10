@@ -33,6 +33,7 @@ This function captures the context in which the error occurred (even if not expl
     <img src="https://raw.githubusercontent.com/CrystalSystems/crystal-v1.0--production/eae791ae0fc1fd4ebcdac588ca8a03a06f13abe3/assets/browserstack_logo.svg" width="290" />
   </a>
 </p>
+<br>
 
 [![SHEDOV.TOP](https://img.shields.io/badge/SHEDOV.TOP-black?style=for-the-badge)](https://shedov.top/) 
 [![CRYSTAL](https://img.shields.io/badge/CRYSTAL-black?style=for-the-badge)](https://crysty.ru/AndrewShedov)
