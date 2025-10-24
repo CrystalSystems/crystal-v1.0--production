@@ -7,19 +7,19 @@
 
 #### This version is functionally identical to the regular [CRYSTAL v1.0](https://github.com/CrystalSystems/crystal-v1.0). However, it includes several key enhancements aimed at improving reliability, security, and stability:
 
-#### 1. Secure database connection.
+**1. Secure database connection.** <br/>
 In the production environment, the backend [connects](https://github.com/CrystalSystems/crystal-v1.0--production/blob/544bfffa9c1b06b081d2be622a9190030ca0444d/backend/src/core/engine/db/connectDB.js#L22) to MongoDB using authentication parameters (`user`, `password`, `authSource`), ensuring protection against unauthorized access.
 
-#### 2. Automatic reconnection to MongoDB.
+**2. Automatic reconnection to MongoDB.** <br/>
 Implemented an automatic reconnection [mechanism](https://github.com/CrystalSystems/crystal-v1.0--production/blob/4700679e84b8683fd5414d1700df99f7a145879e/backend/src/core/engine/db/connectDB.js#L14) for MongoDB in case of connection failures. It supports customizable retry count (`maxRetries`) and delay (`retryDelay`) between attempts, improving application resilience during temporary database outages.
 
-#### 3. Extended `.env` configuration. 
+**3. Extended `.env` configuration.** <br/> 
 This version introduces a more flexible and detailed `.env` [structure](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/backend/src/shared/constants), allowing for fine-grained customization in development and production environments.
 
-#### 4. Advanced MongoDB connection logging.
+**4. Advanced MongoDB connection logging.** <br/>
 Connection to the database is performed with detailed [logging](https://github.com/CrystalSystems/crystal-v1.0--production/blob/6b1bdc59fffe20d38d56a00459926a72fe5326bb/backend/src/core/engine/db/connectDB.js#L29) and status [messages](https://github.com/CrystalSystems/crystal-v1.0--production/blob/6b1bdc59fffe20d38d56a00459926a72fe5326bb/backend/src/core/engine/db/connectDB.js#L34) - this simplifies debugging and monitoring in development and production environments.
 
-#### 5. Improved error handling.  
+**5. Improved error handling.** <br/> 
 A custom `handleServerError` [helper](https://github.com/CrystalSystems/crystal-v1.0--production/blob/main/backend/src/shared/helpers/handle-server-error/handle-server-error.js) was introduced to standardize backend error responses and improve debugging during development.  
 This function captures the context in which the error occurred (even if not explicitly provided), logs detailed information to the console, and adjusts the HTTP response based on the environment:  
 - In **production**, it returns a generic 500 error message without exposing sensitive details.  
