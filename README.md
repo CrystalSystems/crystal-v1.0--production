@@ -5,7 +5,10 @@
 
 ## CRYSTAL v1.0 (Production)
 
-This version is functionally identical to the regular [CRYSTAL v1.0](https://github.com/CrystalSystems/crystal-v1.0). However, it includes several key enhancements aimed at improving reliability, security, and stability:
+This version is functionally identical to the base [CRYSTAL v1.0](https://github.com/CrystalSystems/crystal-v1.0), but it includes several improvements aimed at increasing reliability, security, and stability. You can deploy and test CRYSTAL v1.0 (Production) on a
+[local PC](https://shedov.top/instructions-for-deploying-crystal-v1-0-on-a-local-pc/) or on a [VPC](https://shedov.top/instructions-for-deploying-crystal-v1-0-on-vpc-and-setting-up-access-to-the-website-via-public-ip/) following the [instructions](https://shedov.top/documentation-crystal-v1-0/) for regular version, but additionally, it is necessary to define extended .env variables based on [these examples](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/examples/env).
+
+**Improvements:**
 
 **1. Secure database connection** <br/>
 In the production environment, the backend [connects](https://github.com/CrystalSystems/crystal-v1.0--production/blob/544bfffa9c1b06b081d2be622a9190030ca0444d/backend/src/core/engine/db/connectDB.js#L22) to MongoDB using authentication parameters (`user`, `password`, `authSource`), ensuring protection against unauthorized access.
