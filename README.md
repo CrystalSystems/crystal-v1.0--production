@@ -6,7 +6,7 @@
 ## CRYSTAL v1.0 (Production)
 
 This version is functionally identical to the base [CRYSTAL v1.0](https://github.com/CrystalSystems/crystal-v1.0), but it includes several improvements aimed at increasing reliability, security, and stability. You can deploy and test CRYSTAL v1.0 (Production) on a
-[local PC](https://shedov.top/instructions-for-deploying-crystal-v1-0-on-a-local-pc/) or on a [VPC](https://shedov.top/instructions-for-deploying-crystal-v1-0-on-vpc-and-setting-up-access-to-the-website-via-public-ip/) following the [instructions](https://shedov.top/documentation-crystal-v1-0/) for regular version, but additionally, it is necessary to define `env variables` based on [these examples](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/examples/env).
+[local PC](https://shedov.top/instructions-for-deploying-crystal-v1-0-on-a-local-pc/) or on a [VPC](https://shedov.top/instructions-for-deploying-crystal-v1-0-on-vpc-and-setting-up-access-to-the-website-via-public-ip/) following the [instructions](https://shedov.top/documentation-crystal-v1-0/) for regular version, but additionally, it is necessary to define env variables based on [these examples](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/examples/env).
 
 **Improvements:**
 
@@ -16,8 +16,8 @@ In the production environment, the backend [connects](https://github.com/Crystal
 **2. Automatic reconnection to MongoDB** <br/>
 Implemented an automatic reconnection [mechanism](https://github.com/CrystalSystems/crystal-v1.0--production/blob/4700679e84b8683fd5414d1700df99f7a145879e/backend/src/core/engine/db/connectDB.js#L14) for MongoDB in case of connection failures. It supports customizable retry count (`maxRetries`) and delay (`retryDelay`) between attempts, improving application resilience during temporary database outages.
 
-**3. Extended `env variables` configuration** <br/> 
-This version introduces a more flexible and detailed `env variables` [structure](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/main/backend/src/shared/constants), allowing for fine-grained customization in development and production environments.
+**3. Extended env variables configuration** <br/> 
+This version introduces a more flexible and detailed env variables [structure](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/main/backend/src/shared/constants), allowing for fine-grained customization in development and production environments.
 
 **4. Advanced MongoDB connection logging** <br/>
 Connection to the database is performed with detailed [logging](https://github.com/CrystalSystems/crystal-v1.0--production/blob/6b1bdc59fffe20d38d56a00459926a72fe5326bb/backend/src/core/engine/db/connectDB.js#L29) and status [messages](https://github.com/CrystalSystems/crystal-v1.0--production/blob/6b1bdc59fffe20d38d56a00459926a72fe5326bb/backend/src/core/engine/db/connectDB.js#L34) - this simplifies debugging and monitoring in development and production environments.
