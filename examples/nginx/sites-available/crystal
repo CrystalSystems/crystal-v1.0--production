@@ -1,18 +1,18 @@
 server {
-	server_name www.crysty.ru crysty.ru;
-	return 301 https://crysty.ru$request_uri;
+	server_name www.crystal.you crystal.you;
+	return 301 https://crystal.you$request_uri;
 }
 
 server {
 	listen 443 ssl http2;
-	ssl_certificate /etc/letsencrypt/live/crysty.ru/fullchain.pem; # managed by Certbot
-	ssl_certificate_key /etc/letsencrypt/live/crysty.ru/privkey.pem; # managed by Certbot
-	server_name www.crysty.ru;
-	return 301 https://crysty.ru$request_uri;
+	ssl_certificate /etc/letsencrypt/live/crystal.you/fullchain.pem; # managed by Certbot
+	ssl_certificate_key /etc/letsencrypt/live/crystal.you/privkey.pem; # managed by Certbot
+	server_name www.crystal.you;
+	return 301 https://crystal.you$request_uri;
 }
 
 server {
-	server_name crysty.ru www.crysty.ru;
+	server_name crystal.you www.crystal.you;
 	# Limit the maximum size of files that can be uploaded via POST requests
 	client_max_body_size 5M;
 	# security
@@ -36,8 +36,8 @@ server {
 
 	listen [::]:443 ssl ipv6only=on; # managed by Certbot
 	listen 443 ssl http2; # managed by Certbot
-	ssl_certificate /etc/letsencrypt/live/crysty.ru/fullchain.pem; # managed by Certbot
-	ssl_certificate_key /etc/letsencrypt/live/crysty.ru/privkey.pem; # managed by Certbot
+	ssl_certificate /etc/letsencrypt/live/crystal.you/fullchain.pem; # managed by Certbot
+	ssl_certificate_key /etc/letsencrypt/live/crystal.you/privkey.pem; # managed by Certbot
 	include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
 	ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 }
