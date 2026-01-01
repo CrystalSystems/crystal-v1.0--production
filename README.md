@@ -24,7 +24,8 @@ NPM v11.3.0.<br/>
 PM2 v5.4.3.<br/>
 Vite v6.1.0.<br/>
 
-**Improvements:** <br/>
+**Improvements:**
+
 **1. Secure database connection** <br/>
 In the production environment, the backend [connects](https://github.com/CrystalSystems/crystal-v1.0--production/blob/544bfffa9c1b06b081d2be622a9190030ca0444d/backend/src/core/engine/db/connectDB.js#L22) to MongoDB using authentication parameters (`user`, `password`, `authSource`), ensuring protection against unauthorized access.
 
