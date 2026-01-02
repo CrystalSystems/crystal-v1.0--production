@@ -13,7 +13,7 @@ You can deploy and test CRYSTAL v1.0 (Production) on a
 SPA, REST API, FSD.
 
 **Composition:** <br/>
-[Full code](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/main) | Package.json: [frontend](https://github.com/CrystalSystems/crystal-v1.0--production/blob/main/main/frontend/package.json) | [backend](https://github.com/CrystalSystems/crystal-v1.0--production/blob/main/main/backend/package.json)<br/>
+[Full code](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/main) | Package.json: [frontend](https://github.com/CrystalSystems/crystal-v1.0--production/blob/main/main/frontend/package.json) &#x2234; [backend](https://github.com/CrystalSystems/crystal-v1.0--production/blob/main/main/backend/package.json)<br/>
 
 **Structure:** <br/>
 **M**ongoDB v8.0.4.<br/>
