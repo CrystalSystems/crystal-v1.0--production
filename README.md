@@ -10,19 +10,19 @@ You can deploy and test CRYSTAL v1.0 (Production) on a
 [local PC](https://shedov.top/instructions-for-deploying-crystal-v1-0-on-a-local-pc/) or on a [VPC](https://shedov.top/instructions-for-deploying-crystal-v1-0-on-vpc-and-setting-up-access-to-the-website-via-public-ip/) following the [instructions](https://shedov.top/documentation-crystal-v1-0/) for regular version, but additionally, it is necessary to define env variables based on [these examples](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/examples/env).
 
 **Architecture:** <br/>
-SPA, REST API, FSD.
+SPA, REST API, FSD
 
 **Composition:** <br/>
 [Full code](https://github.com/CrystalSystems/crystal-v1.0--production/tree/main/main) | Package.json: [frontend](https://github.com/CrystalSystems/crystal-v1.0--production/blob/main/main/frontend/package.json) &#x2234; [backend](https://github.com/CrystalSystems/crystal-v1.0--production/blob/main/main/backend/package.json)<br/>
 
 **Structure:** <br/>
-**M**ongoDB v8.0.4.<br/>
-**E**xpress.js v4.21.2.<br/>
-**R**eact v19.0.0.<br/>
-**N**ode.js v24.0.2.<br/>
-NPM v11.3.0.<br/>
-PM2 v5.4.3.<br/>
-Vite v6.1.0.<br/>
+**M**ongoDB v8.0.4<br/>
+**E**xpress.js v4.21.2<br/>
+**R**eact v19.0.0<br/>
+**N**ode.js v24.0.2<br/>
+NPM v11.3.0<br/>
+PM2 v5.4.3<br/>
+Vite v6.1.0<br/>
 
 **Improvements:**
 
